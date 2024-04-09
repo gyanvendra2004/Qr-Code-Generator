@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to include padding and border in the element's total width and height */
+}
+
+body {
+    background: linear-gradient(to right, rgb(106, 187, 234), rgb(117, 10, 217));
+    font-family: Arial, sans-serif; /* Added a fallback font */
+}
+
+.main {
+    margin: 50px auto; /* Center the main container */
+    max-width: 400px; /* Limit the width of the main container */
+    padding: 20px;
+    background-color: #fff; /* Added a background color for better readability */
+    border-radius: 20px;
+    text-align: center; /* Center align the content */
+}
+
+h1 {
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgb(3, 0, 6);
+    width: 70%; /* Adjusted the width to make it responsive */
+    padding-bottom: 6px;
+    margin: 0 auto 25px; /* Center the heading */
+}
+
+.input-box {
+    display: block;
+    padding: 15px; /* Reduced padding for smaller screens */
+    width: 100%; /* Adjusted width to be responsive */
+    border-radius: 20px;
+    outline: 0;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+
+.createQr {
+    border: 0;
+    padding: 15px; /* Reduced padding for smaller screens */
+    width: 100%; /* Adjusted width to be responsive */
+    background: rgb(5, 54, 126);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main img {
+    max-width: 100%; /* Make the QR code image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the image */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .main {
+        margin: 20px;
+    }
+}
+
+
